@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="showDateTime(); startTimer();">
+
+    <div class="date-time" id="datetime"></div>
+
+    <div class="form-container">
+        <h2>User Registration</h2>
+        <form id="registrationForm" onsubmit="return validateForm();">
+
+            <label>First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name">
+
+            <label>Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+
+            <label>Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password">
+
+            <label>Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+
+            <label>Gender:</label>
+            <div class="gender">
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </div>
+
+            <label>Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Format: XXX-XXX-XXXX">
+
+            <label>DOB:</label>
+            <input type="text" id="dob" name="dob" placeholder="DD-MM-YYYY">
+
+            <label>Email Address:</label>
+            <input type="text" id="email" name="email" placeholder="Enter Email">
+
+            <label>Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter Address"></textarea>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</html>
